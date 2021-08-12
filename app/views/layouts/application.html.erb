@@ -10,6 +10,12 @@
   </head>
 
   <body>
-    <%= yield %>
+  <nav class="navbar navbar-dark bg-primary">
+  <h1> WikiDocs </h1>
+  <%= link_to "Create a New Article", new_article_path, {class: "btn btn-success"} %>
+</nav>
+    <div class="container">
+      <%= yield %>
+    </div>
   </body>
 </html>

@@ -1,0 +1,6 @@
+<ul>
+  <% @articles.each do |article| %>
+    <li><h4>Title: <%= link_to("#{article.title}:", article_path(article)) %> </h4></li>
+    <p>Quote: <%= article.content %> </p>
+  <% end %>
+</ul>
